@@ -1,5 +1,5 @@
 # DSLR-Snapshots
-_A simple tool to use a USB-connected camera for timelapses in Octoprint_
+_A simple tool to fetch an image from a USB camera through the network_
 
 **Requires gphoto2**
 
