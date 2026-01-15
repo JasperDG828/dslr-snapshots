@@ -12,11 +12,11 @@ def snapshot():
         subprocess.run(
             ["gphoto2", "--capture-image-and-download", f"--folder={os.getcwd()}"]
         )
-        result = send_file(f"{os.getcwd()}/capt0000.jpg", mimetype="image/jpg")
+        result = send_file(f"{os.getcwd()}/capt0000.jpg", mimetype="image/jpeg")
         subprocess.run(["rm", f"{os.getcwd()}/capt0000.jpg"])
         return result
     except:
-        return send_file("backenderror.jpg", mimetype="image/jpg")
+        return send_file("backenderror.jpg", mimetype="image/jpeg")
 
 
 if __name__ == "__main__":
